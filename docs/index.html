@@ -19,7 +19,8 @@
 <meta name="twitter:image" content="https://unitly-1lb.pages.dev/og.png">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7F7F4">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0C1214">
-<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="icon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="icon-dark.png" media="(prefers-color-scheme: dark)">
 <link rel="apple-touch-icon" href="logo.png">
 <link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="img/photo-crack.webp" as="image">
@@ -81,6 +82,7 @@
   header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; color: var(--ink); text-decoration: none; letter-spacing: -.02em; }
   .mark { height: 36px; width: auto; display: block; }
+  picture { display: contents; }
   nav { display: flex; align-items: center; gap: 28px; }
   nav a.link { color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 500; transition: color .15s; }
   nav .btn { min-height: 40px; padding: 8px 16px; font-size: 15px; }
@@ -544,7 +546,7 @@
 
 <header>
   <div class="wrap">
-    <a class="brand" href="#top"><img class="mark" src="img/lockup.svg" alt="Unitly home" width="97" height="36"></a>
+    <a class="brand" href="#top"><picture><source srcset="img/lockup-dark.webp" media="(prefers-color-scheme: dark)"><img class="mark" src="img/lockup-light.webp" alt="Unitly home" width="125" height="36"></picture></a>
     <nav aria-label="Main">
       <a class="link" href="#features">Features</a>
       <a class="link" href="#how">How it works</a>
@@ -572,10 +574,10 @@
       <div class="reel-canvas" aria-hidden="true">
         <div class="rise" style="--d:.2s">
           <div class="app">
-            <div class="a-title"><img src="logo.svg" width="16" height="16" alt="">Unitly Pro
+            <div class="a-title"><picture><source srcset="icon-dark.png" media="(prefers-color-scheme: dark)"><img src="icon-light.png" width="16" height="16" alt=""></picture>Unitly Pro
               <span class="a-win"><svg viewBox="0 0 10 10"><path d="M0 5h10"/></svg><svg viewBox="0 0 10 10"><path d="M.5 .5h9v9h-9z"/></svg><svg viewBox="0 0 10 10"><path d="M0 0l10 10M10 0L0 10"/></svg></span></div>
             <div class="a-head">
-              <span class="a-brand"><img src="img/lockup.svg" alt="" width="64" height="24"><small>Pro</small></span>
+              <span class="a-brand"><picture><source srcset="img/lockup-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/lockup-light.webp" alt="" width="84" height="24"></picture><small>Pro</small></span>
               <i class="a-vr"></i>
               <span class="a-tbtn a-folder" data-k="choose"><svg class="ai"><use href="#m-folder"/></svg><span data-k="path">Open inspection folder</span></span>
               <span class="a-gap"></span>
@@ -651,7 +653,7 @@
         <p class="k-sub" data-k="ksub">Photos in, finished report out. Try Pro free for 48 hours.</p>
         <a class="btn btn-primary" href="#trial" data-k="kcta">Start free trial <svg class="ic go" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
       </div>
-      <div class="wipe" data-k="wipe" aria-hidden="true"><span class="wipe-mark" data-k="wlogo"><img src="img/lockup.svg" alt="" width="193" height="72"></span></div>
+      <div class="wipe" data-k="wipe" aria-hidden="true"><span class="wipe-mark" data-k="wlogo"><img src="img/lockup-dark.webp" alt="" width="251" height="72"></span></div>
 
       <div class="wrap reel-steps" aria-hidden="true">
         <ol>
@@ -903,7 +905,7 @@
 <footer>
   <div class="wrap">
     <div>
-      <a class="brand" href="#top"><img class="mark" src="img/lockup.svg" alt="Unitly home" width="97" height="36"></a>
+      <a class="brand" href="#top"><picture><source srcset="img/lockup-dark.webp" media="(prefers-color-scheme: dark)"><img class="mark" src="img/lockup-light.webp" alt="Unitly home" width="125" height="36"></picture></a>
       <span>© 2026 Mohamed Kaiser. Unitly is owned and developed by Mohamed Kaiser. All rights reserved. <a href="terms.html">Terms</a></span>
       <span class="end">Contact: <a href="mailto:mohdkaiser1806@gmail.com">mohdkaiser1806@gmail.com</a></span>
     </div>
